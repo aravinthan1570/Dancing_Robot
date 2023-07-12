@@ -1,0 +1,342 @@
+body{
+    background: black;
+}
+h1{
+    color:chartreuse;
+    text-align: center;
+    
+}
+.container{
+    height: 450px;
+    width: 700px;
+    border: 2px solid red;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.face{
+    height:125px;
+    width: 150px;
+    background: chartreuse;
+    margin: auto;
+    margin-top: 20px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    /*transition: width 1s ease;*/
+}
+
+.container:hover .face
+{    
+    animation: face 2s infinite;
+}
+@keyframes face
+{
+    0%{
+        transform:translateX(10px);
+        border-radius: 50%;
+        background-color: red;
+    }
+    25%{
+        transform:translateY(-10px);
+    }
+    50%{
+        transform:translateX(-20px);
+        border-radius: 50%;
+    }
+    75%{
+        transform:translateY(10px);
+    }
+    100%{
+        transform:translateX(10px);
+    }
+}
+
+.eyes
+{
+    display: flex;
+    width: 150px;
+    justify-content: space-evenly;
+    padding-top: 55px;
+}
+.leye{
+    height: 25px;
+    width: 25px;
+    background: black;
+    border-radius: 50%;
+}
+.container:hover .leye{
+    animation: leye 1s infinite;
+
+}
+@keyframes leye
+{
+    0%
+    {
+        background: rgb(4, 228, 244);
+         border-radius: 50%;
+    }
+    25%
+    {
+        background-color:blue;
+        border-radius: 50%;
+    }
+    50%
+    {
+        background-color: brown;
+        border-radius: 50%;
+    }
+    75%
+    {
+        background-color: yellow;
+        border-radius: 50%;
+    }
+    100%
+    {
+        background-color: rgb(218, 32, 134);
+        border-radius: 50%;
+    }
+}
+
+.reye{
+    height: 25px;
+    width: 25px;
+    background: black;
+    border-radius: 50%;
+}
+.container:hover .reye{
+    animation: reye 1s infinite;
+
+}
+@keyframes reye
+{
+    0%
+    {
+        background: skyblue;
+         border-radius: 50%;
+    }
+    25%
+    {
+        background-color: blue;
+        border-radius: 50%;
+    }
+    50%
+    {
+        background-color: brown;
+        border-radius: 50%;
+    }
+    75%
+    {
+        background-color: yellow;
+        border-radius: 50%;
+    }
+    100%
+    {
+        background-color: pink;
+        border-radius: 50%;
+    }
+}
+.body{
+    display: flex;
+    width:250px;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 10px;
+}
+.lhand{
+    height: 85px;
+    width: 23px;
+    background-color: chartreuse;
+    border-radius: 20%;
+}
+.container:hover .lhand
+{ 
+        animation: lhand 2s infinite;
+}
+    @keyframes lhand
+    {
+        0%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+        25%
+        {
+            transform: rotate(-50deg);
+            transform-origin: top center;
+        }
+        50%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+        75%
+        {
+            transform: rotate(-50deg);
+            transform-origin: top center;
+        }
+        100%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+    }
+.center{
+    height: 150px;
+    width: 150px;
+    background-color: chartreuse;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius:30%;
+}
+.container:hover .center{
+    width:150px ;
+    animation: center 0.5s infinite;
+
+}
+@keyframes center
+{
+ 0%{
+   transform:rotate(360deg);
+   border-radius: 50%;
+   background-color: red;
+ }
+ 25%
+ {
+   transform:rotate(-360deg);
+   border-radius: 50%;
+ }
+ 50%
+ {
+   transform:rotate(-360deg);
+   border-radius: 50%;
+   background-color: blue;
+ }
+ 100%
+ {
+   transform: translateX(20px);
+   border-radius: 50%;
+ }
+}
+.rhand{
+    height: 85px;
+    width: 23px;
+    background-color: chartreuse;
+    border-radius: 20%;
+}
+
+.container:hover .rhand
+{ 
+        animation: rhand 2s infinite;
+}
+    @keyframes rhand
+    {
+        0%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+        25%
+        {
+            transform: rotate(-50deg);
+            transform-origin: top center;
+        }
+        50%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+        75%
+        {
+            transform: rotate(-50deg);
+            transform-origin: top center;
+        }
+        100%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+    }
+
+.legs{
+    display: flex;
+    width: 150px;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 10px;
+}
+.lleg{
+    height: 85px;
+    width: 23px;
+    background-color: chartreuse;
+    border-radius: 20%;
+}
+
+.container:hover .lleg
+{ 
+        animation: lleg 1s infinite;
+}
+    @keyframes lleg
+    {
+        0%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+        25%
+        {
+            transform: rotate(-50deg);
+            transform-origin: top center;
+        }
+        50%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+        75%
+        {
+            transform: rotate(-50deg);
+            transform-origin: top center;
+        }
+        100%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+    }
+.rleg{
+    height: 85px;
+    width: 23px;
+    background-color: chartreuse;
+    border-radius: 20%;
+}
+.container:hover .rleg
+{ 
+        animation: rleg 1s infinite;
+}
+    @keyframes rleg
+    {
+        0%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+        25%
+        {
+            transform: rotate(-50deg);
+            transform-origin: top center;
+        }
+        50%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+        75%
+        {
+            transform: rotate(-50deg);
+            transform-origin: top center;
+        }
+        100%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+    }
